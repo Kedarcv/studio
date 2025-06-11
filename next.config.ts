@@ -1,7 +1,11 @@
 import type {NextConfig} from 'next';
+import withPWA from 'next-pwa';
+
+const withPWAConfig = withPWA({
+  dest: 'public',
+});
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,14 +14,13 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
+ {
+ protocol: 'https',
+ hostname: 'placehold.co',
         pathname: '/**',
       },
     ],
   },
 };
 
-export default nextConfig;
+export default withPWAConfig(nextConfig);

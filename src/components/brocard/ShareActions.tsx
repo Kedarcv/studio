@@ -10,8 +10,8 @@ import { Share2, WalletCards, QrCode, CheckCircle, Download } from 'lucide-react
 
 const contactInfo = {
   name: "Michael Nkomo",
-  title: "Founder & Software Engineer",
-  company: "BroCode ZW",
+  title: "Co-founder & Software Engineer",
+  company: "Brocode Zimbabwe",
   location: "Gweru, Zimbabwe",
   phone: "+263719340335",
   email: "cvlised360@gmail.com",

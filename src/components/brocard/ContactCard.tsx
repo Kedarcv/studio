@@ -4,14 +4,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { MapPin, Phone, Mail, Briefcase, Building2 } from 'lucide-react';
 import { InfoItem } from './InfoItem';
 
+import me from './me.jpeg';
 const contactInfo = {
   name: "Michael Nkomo",
-  title: "Founder & Software Engineer",
-  company: "BroCode ZW",
+  title: "Co-founder & Software Engineer",
+  company: "Brocode Zimbabwe",
   location: "Gweru, Zimbabwe",
   phone: "+263 719 340 335",
   email: "cvlised360@gmail.com",
-  avatarUrl: "https://placehold.co/120x120.png",
+  avatarUrl: me,
 };
 
 export function ContactCard() {
