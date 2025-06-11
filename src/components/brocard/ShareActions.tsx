@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -8,12 +9,12 @@ import { useToast } from '@/hooks/use-toast';
 import { Share2, WalletCards, QrCode, CheckCircle, Download } from 'lucide-react';
 
 const contactInfo = {
-  name: "Kudakwashe Mupeni",
+  name: "Michael Nkomo",
   title: "Founder & Software Engineer",
   company: "BroCode ZW",
   location: "Gweru, Zimbabwe",
-  phone: "+263 777 037 599",
-  email: "kudamupeni@brocodezw.com",
+  phone: "+263 719 340 335",
+  email: "cvlised360@gmail.com",
 };
 
 export function ShareActions() {
@@ -57,7 +58,7 @@ N:${contactInfo.name.split(' ').slice(-1).join(' ')};${contactInfo.name.split(' 
 FN:${contactInfo.name}
 ORG:${contactInfo.company}
 TITLE:${contactInfo.title}
-TEL;TYPE=WORK,VOICE:${contactInfo.phone}
+TEL;TYPE=WORK,VOICE:${contactInfo.phone.replace(/\s+/g, '')}
 EMAIL:${contactInfo.email}
 ADR;TYPE=WORK:;;;${contactInfo.location.split(',')[0]};;${contactInfo.location.split(',')[1]?.trim()};
 END:VCARD`;
@@ -114,7 +115,7 @@ END:VCARD`;
                 height={200} 
                 className="rounded-md border-4 border-primary shadow-lg"
                 data-ai-hint="qr code"
-                unoptimized={true} // Necessary for external dynamic images if not configured in next.config.js
+                unoptimized={true}
               />
             </div>
           )}

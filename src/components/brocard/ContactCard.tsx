@@ -1,16 +1,17 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Briefcase, Building2 } from 'lucide-react';
 import { InfoItem } from './InfoItem';
 
 const contactInfo = {
-  name: "Kudakwashe Mupeni",
+  name: "Michael Nkomo",
   title: "Founder & Software Engineer",
   company: "BroCode ZW",
   location: "Gweru, Zimbabwe",
-  phone: "+263 777 037 599",
-  email: "kudamupeni@brocodezw.com",
-  avatarUrl: "https://placehold.co/120x120.png", // Replace with actual image or leave as placeholder
+  phone: "+263 719 340 335",
+  email: "cvlised360@gmail.com",
+  avatarUrl: "https://placehold.co/120x120.png",
 };
 
 export function ContactCard() {
