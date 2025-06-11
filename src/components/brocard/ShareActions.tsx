@@ -13,7 +13,7 @@ const contactInfo = {
   title: "Founder & Software Engineer",
   company: "BroCode ZW",
   location: "Gweru, Zimbabwe",
-  phone: "+263 719 340 335",
+  phone: "+263719340335",
   email: "cvlised360@gmail.com",
 };
 
@@ -78,7 +78,7 @@ END:VCARD`;
     });
   };
 
-  const qrCodeUrl = currentUrl ? `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(currentUrl)}&qzone=1&margin=10&color=000080&bgcolor=40E0D0` : '';
+  const qrCodeUrl = currentUrl ? `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(currentUrl)}&qzone=1&margin=10&color=36454F&bgcolor=E0E0E0` : '';
 
 
   const buttonClass = "flex-1 min-w-[160px] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 focus:scale-105 focus:ring-2 focus:ring-offset-2 focus:ring-ring";
@@ -99,15 +99,15 @@ END:VCARD`;
             <QrCode className="mr-2 h-5 w-5" /> Show QR
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[320px] bg-background/80 backdrop-blur-md border-primary/50 rounded-xl">
+        <DialogContent className="sm:max-w-[320px] bg-popover backdrop-blur-md border-border rounded-xl">
           <DialogHeader className="items-center">
             <DialogTitle className="text-2xl font-headline text-primary">Scan to Share</DialogTitle>
-            <DialogDescription className="text-center text-foreground/80">
+            <DialogDescription className="text-center text-popover-foreground/80">
               Scan this QR code with a phone camera to open the BroCard.
             </DialogDescription>
           </DialogHeader>
           {currentUrl && (
-            <div className="mt-4 flex justify-center p-4 bg-turquoise-blue rounded-lg">
+            <div className="mt-4 flex justify-center p-4 bg-muted rounded-lg">
               <Image 
                 src={qrCodeUrl} 
                 alt="BroCard QR Code" 
